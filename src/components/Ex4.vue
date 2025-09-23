@@ -13,8 +13,8 @@
             changeColor() {
 
                 //changes id
-                this.blueBox = !this.blueBox
-                this.blueBtn = !this.blueBtn
+                this.blueBox = !this.blueBox;
+                this.blueBtn = !this.blueBtn;
             }
 		}
     }
@@ -28,7 +28,7 @@
             div ID : {{id}} 
         </div>
         
-        <button type="button" :class="{'blueBox': blueBtn, 'redBox': !blueBtn}" @click="changeColor()">Change Color</button>
+        <button type="button" :class="{'btn btn-primary': blueBtn, 'btn btn-danger': !blueBtn}" @click="changeColor()">Change Color</button>
     </div>
 
 </template>
